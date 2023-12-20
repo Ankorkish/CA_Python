@@ -8,8 +8,7 @@ liczby parzyste
 even_nums = {2, 4, 6, 8, 10}  # zbiór liczb parzystych
 emp = {1, 'Steve', 10.5, True}  # zbiór różnych obiektów
 
-"""
-Zbiór nie przechowuje zduplikowanych obiektów.
+"""Zbiór nie przechowuje zduplikowanych obiektów.
 Nawet jeśli obiekt zostanie dodany więcej niż
 jeden raz wewnątrz nawiasów klamrowych, tylko jedna kopia
 jest przechowywana w obiekcie set. W związku z tym operacje

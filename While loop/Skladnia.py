@@ -1,17 +1,7 @@
-# Program w Pythonie demonstrujący
-# pętlę while-else
+def funkcja(a, b, c):
+    print("a: ", a)
+    print("b: ", b)
+    print("c: ", c)
 
-i = 0
-while i < 4:
-    i += 1
-    print(i)
-else:  # Wykonane, ponieważ nie ma break w pętli
-    print("Brak Break\n")
-
-i = 0
-while i < 4:
-    i += 1
-    print(i)
-    break
-else:  # Nie wykonane, ponieważ jest break
-    print("Brak Break")
+# Wywołanie funkcji z użyciem argumentów słów kluczowych
+funkcja(a=1, c=3, b=2)

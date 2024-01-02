@@ -20,4 +20,5 @@ def pomnoz_liczby(a, b):
         raise ValueError("Jedna z liczb jest ujemna.")
     return a * b
 
-pomnoz_liczby(2,3)
+pomnoz_liczby(12, 12)
+print()

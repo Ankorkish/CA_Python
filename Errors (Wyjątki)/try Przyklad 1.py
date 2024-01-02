@@ -12,4 +12,6 @@ def podziel(x, y):
     else:
         print("Nie ma wyjątku!")
 
-podziel(10, 2)
+podziel(10, 0)
+
+print("Hello!")

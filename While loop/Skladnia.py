@@ -1,7 +1,6 @@
-def funkcja(a, b, c):
-    print("a: ", a)
-    print("b: ", b)
-    print("c: ", c)
+# sprawdza, czy lista nadal
+# zawiera jakieś elementy
+a = [16, 2, 12, 7]
 
-# Wywołanie funkcji z użyciem argumentów słów kluczowych
-funkcja(a=1, c=3, b=2)
+while a:
+    print(a.pop())

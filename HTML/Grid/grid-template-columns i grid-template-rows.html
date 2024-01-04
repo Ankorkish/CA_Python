@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-template-rows: 300px 200px 120px;
+            gap: 10px;
+
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 60px;
+
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .item-a {
+            background-color: #3498db;
+            /* Somewhat dark blue */
+        }
+
+        .item-b {
+            background-color: #e74c3c;
+            /* Somewhat dark red */
+        }
+
+        .item-c {
+            background-color: #9b59b6;
+            /* Somewhat dark purple */
+        }
+
+        .item-d {
+            background-color: #27ae60;
+            /* Somewhat dark green */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item item-a">1</div>
+        <div class="item item-b">2</div>
+        <div class="item item-c">3</div>
+        <div class="item item-d">4</div>
+        <div class="item item-a">5</div>
+        <div class="item item-b">6</div>
+        <div class="item item-c">7</div>
+        <div class="item item-d">8</div>
+        <div class="item item-a">9</div>
+        <div class="item item-b">10</div>
+        <div class="item item-c">11</div>
+        <div class="item item-d">12</div>
+    </div>
+
+</body>
+
+</html>

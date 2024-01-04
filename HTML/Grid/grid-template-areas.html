@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            grid-template-rows: repeat(3, 130px);
+            gap: 10px;
+
+
+            grid-template-areas:
+                "header header header header"
+                "main main . sidebar"
+                "footer footer footer footer";
+
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 60px;
+
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .item-a {
+            background-color: #3498db;
+             
+            grid-area: header;
+        }
+
+        .item-b {
+            background-color: #e74c3c;
+            /* Somewhat dark red */
+
+            grid-area: main;
+        }
+
+        .item-c {
+            background-color: #9b59b6;
+            /* Somewhat dark purple */
+
+            grid-area: sidebar;
+        }
+
+        .item-d {
+            background-color: #27ae60;
+            /* Somewhat dark green */
+
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item item-a">header</div>
+        <div class="item item-b">main</div>
+        <div class="item item-c">sidebar</div>
+        <div class="item item-d">footer</div>
+    </div>
+
+</body>
+
+</html>

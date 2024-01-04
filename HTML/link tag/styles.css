@@ -1,0 +1,46 @@
+.ukad-flex{
+    display:flex;
+    background-color: rgb(177, 177, 177);
+    
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 40px;
+
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flood-color: white;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+
+
+    border: 5px solid rgb(23, 141, 13);
+    color: #ffffff;
+    background-color:rgb(31, 191, 16);
+}
+
+.item-1{
+    order: 2;
+}
+.item-2{
+    order: 2;
+}
+.item-3{
+    order: 1;
+    flex-grow: 1;
+}
+.item-4{
+    order: 1;
+    flex-grow: 1;
+}
+.item-5{
+    order: 0;
+}

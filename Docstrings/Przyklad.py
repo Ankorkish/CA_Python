@@ -14,3 +14,7 @@ def pomnoz_liczby(a, b):
     return a * b
 
 help(pomnoz_liczby)
+
+
+pomnoz_liczby(2, 3)
+

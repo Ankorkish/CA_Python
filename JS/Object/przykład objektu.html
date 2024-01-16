@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let samochod = {
+            marka: "Toyota",
+            model: "Corolla",
+            rok: 2020,
+            pokazInformacje: function () {
+                return this.marka + " " + this.model + " (" + this.rok + ")";
+            }
+        };
+
+        let liczby = [10, 20, 30, 40, 50]
+        console.log(samochod.pokazInformacje());
+
+        for (let wl in liczby){
+            console.log(wl);
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -6,116 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Grid Example</title>
     <style>
-        body {
-            margin: 0;
-            padding: 10px;
-            font-family: 'Arial', sans-serif;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-        }
-
-        .container {
+        .grid-container {
             display: grid;
-            grid-template-columns: 200px 100px 100px;
-            grid-template-rows: 200px 200px;
-            gap: 10px;
-
-            background-color: #fff;
-            padding: 50px;
-            border-radius: 10px;
-
+            /* Aktywujemy siatkę */
+            grid-template-columns: repeat(liczba_powtórzeń, wartość);
+            /* Definiujemy dwie kolumny o równych rozmiarach */
+            grid-gap: 10px;
+            /* Ustawiamy odstępy między elementami siatki */
         }
 
-        .item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+        .grid-container>div {
+            background-color: #f0f0f0;
+            /* Nadajemy kolor tła dla elementów siatki */
             text-align: center;
-            background-color: grey;
-
-            border-radius: 5px;
-            color: white;
-            font-weight: bold;
-        }
-
-        .item-a {
-            
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-        
-        
-
-
-        .item-b {
-            grid-column-start: 2;
-            grid-column-end: 3;
-            grid-row-start: 2;
-            grid-row-end: 3;
-        }
-
-        
-        
-
-
-        .item-c {
-            background-color: grey;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 2;
-            grid-row-end: 3;
-
-        
-        }
-        
-
-        .item-d {
-            background-color: grey;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 1;
-            grid-row-end: 2;
-        }
-
-        
-        
-        
-        .item-e {
-            background-color: grey;
-            grid-column-start: 1;
-            grid-column-end: 2;
-            grid-row-start: 2;
-            grid-row-end: 3;
-
-        
-        }
-
-        .item-f {
-            background-color: grey;
-            grid-column-start: 3;
-            grid-column-end: 4;
-            grid-row-start: 1;
-            grid-row-end: 2;
+            /* Centrujemy tekst w elementach */
+            padding: 20px;
+            /* Dodajemy wewnętrzne marginesy */
+            border: 1px solid #ddd;
+            /* Dodajemy obramowanie dla elementów */
         }
     </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="item item-a">A</div>
-        <div class="item item-b">B</div>
-        <div class="item item-c">C</div>
-        <div class="item item-d">D</div>
-        <div class="item item-e">E</div>
-        <div class="item item-f">F</div>
+    <div class="grid-container">
+        <div>Element 1</div>
+        <div>Element 2</div>
+        <div>Element 3</div>
+        <div>Element 4</div>
+        <div>Element 5</div>
     </div>
+
 
 </body>
 

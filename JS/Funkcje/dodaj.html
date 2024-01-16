@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let ksiazka = {
+            tytul: "Shpere",
+            autor: "Stsiven King",
+            rok_wydania: 2017,
+            opis: function(){
+                console.log(`${this.tytul} - ${this.autor} - ${this.rok_wydania}`)
+            }
+        }
+        let samochod = {
+            marka: "KIA",
+            model: "Seed",
+            rok_produkcji: 2019,
+            jedz: function(){
+                console.log(`${this.marka} ${this.model} jedzie! ${new Date()}`)
+            }
+        }
+
+        let konto_bankowe = {
+            numer_konta: 47287482164126671,
+            saldo: 1000,
+            wplata: function(suma){
+                this.saldo += suma;
+            },
+            wyplata: function(suma){
+                this.saldo -= suma;
+            }
+        }
+
+        Smartfon = {
+            model: "Iphone 15 PRO MAX ULTRU GIGA CHAD",
+            producent: "Apple",
+            pojemnosc_baterii: 5600,
+            dzwon: function(){
+                console.log(`${this.model} dzwoni!!`)
+            }
+        }
+
+        ksiazka.opis();
+
+        samochod.jedz()
+
+        console.log(konto_bankowe.saldo);
+
+        konto_bankowe.wplata(parseInt(prompt()));
+        console.log(konto_bankowe.saldo);
+
+        konto_bankowe.wyplata(2000000);
+        console.log(konto_bankowe.saldo);
+
+        Smartfon.dzwon();
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

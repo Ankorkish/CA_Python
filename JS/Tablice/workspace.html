@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        let osoba = {
+            imie: "Alina",
+            nazwisko: "Szlejzer",
+            wiek: 13,
+            adres: {
+                ulica: "ulica",
+                numerDomu: 12,
+                misto: "Bydgoszcz"
+            }
+        }
+
+        for (let klucz in Object.values(osoba)) {
+            console.log(`${klucz}`)
+        }
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>

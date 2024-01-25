@@ -1,6 +1,15 @@
-const liczby = [1, 2, 3, 4, 5, 6];
-const parzyste = liczby.filter((liczba) => {
-  return liczba % 2 == 0;
-});
+function plusOne(digits){
+    for (let i = digits.length - 1; i >= 0; i--){
+        digits[i]++
+        if (digits[i] < 10){
+            return digits
+        }
+        digits[i] = 0
+    }
 
-console.log(parzyste); // Wynik: [2, 4, 6]
+    digits.splice(0, 0, 1)
+
+    return digits
+}
+
+console.log(plusOne([9,9,9]))

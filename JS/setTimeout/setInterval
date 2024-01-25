@@ -1,0 +1,16 @@
+function animujTekst(tekst){
+    let i = 0;
+    let aktualnyTekst = "";
+    let idInterwalu = setInterval(() => {
+        aktualnyTekst += tekst[i];
+
+        console.log(aktualnyTekst)
+        i++;
+        if (i >= tekst.length){
+            clearInterval(idInterwalu)
+        }
+    }, 500)
+
+}
+
+animujTekst("loading...")

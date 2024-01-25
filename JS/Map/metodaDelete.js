@@ -1,10 +1,10 @@
-let mapa = new Map();
-mapa.set("klucz", "wartość1");
+let moja_mapa = new Map(); // Utworzenie nowej mapy
+moja_mapa.set("klucz", "wartość1"); // Dodanie wartości do mapy
 
-mapa.delete("klucz")
+moja_mapa.delete("klucz") // Usunięcie klucza z mapy
 
-if (mapa.has("klucz")){
-    console.log("Mapa zawiera klucz")
+if (moja_mapa.has("klucz")){
+    console.log("Mapa zawiera klucz") // Wyświetlenie, jeśli klucz istnieje
 } else{
-    console.log("Mapa nie zawiera klucz")
+    console.log("Mapa nie zawiera klucz") // Wyświetlenie, jeśli klucz nie istnieje
 }
